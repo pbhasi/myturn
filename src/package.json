@@ -1,0 +1,18 @@
+{
+  "name": "sample-http",
+  "version": "0.0.1",
+  "dependencies": {
+    "@google-cloud/datastore": "1.4.2",
+    "@google-cloud/logging": "4.0.1",
+    "express": "^4.16.3"
+  },
+  "scripts": {
+    "deploy": "gcloud app deploy",
+    "start": "node index.js",
+    "lint": "repo-tools lint",
+    "pretest": "npm run lint",
+    "system-test": "repo-tools test app",
+    "test": "npm run system-test",
+    "e2e-test": "repo-tools test deploy"
+  }
+}
